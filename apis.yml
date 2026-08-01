@@ -1,7 +1,24 @@
 aid: pixyalbum
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pixyalbum.png
 name: Pixyalbum
-description: Pixyalbum is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Pixyalbum is a Mexican consumer photo-printing service that turns digital photos
+  from a mobile device into physical printed products delivered across Mexico. Its catalog
+  includes Fotolibros (soft- and hard-cover photo books of 40-100 pages), Imanes (packs of
+  square photo magnets), and Pixycuadros (photographic prints with optional framing). Surfaced
+  as a portfolio company of 500 Global and added to the API Evangelist network. Pixyalbum is a
+  direct-to-consumer product with no public API, developer portal, or documentation at the time
+  of enrichment; this profile captures its public identity and web properties.
 url: https://raw.githubusercontent.com/api-evangelist/pixyalbum/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Photo Printing
+- Photo Books
+- Consumer
+- E-commerce
+- Printing
+- Mexico
+- Photography
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pixyalbum-domain-security.yml
 - type: Website
   url: https://pixyalbum.com
+- type: Login
+  url: https://web.pixyalbum.com/account
+- type: Support
+  url: https://www.pixyalbum.com/faqs
+- type: TermsOfService
+  url: https://www.pixyalbum.com/terms
+- type: PrivacyPolicy
+  url: https://www.pixyalbum.com/policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
